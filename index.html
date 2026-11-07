@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PremiumX Tech - A place where technology evolves every single day. Explore high-performance gadgets, smart electronics, and hardware." />
+    <title>PremiumX Tech | Official Website</title>
+    
+    <!-- Modern Tech Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="header">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="#home" class="logo">
+          Premium<span class="logo-accent">X</span> Tech
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Our Products</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <span style="color: #fff; font-size: 0.9rem;">Cart: <span id="cartCount">0</span></span>
+          <a href="#contact" class="orderBtn">Place Order</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1200">
+          <h1>Welcome to <span class="highlight">PremiumX Tech</span></h1>
+          <p>A place where technology evolves every single day.</p>
+          <a href="#products" class="hero-cta">Explore Features</a>
+        </div>
+
+        <div class="img-container" data-aos="fade-left" data-aos-duration="1200">
+          <div class="hero-img">
+            <img src="images/image.png" alt="Advanced Tech Hardware" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div
+          class="img-container"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
+          <div class="about-img">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80"
+              alt="Engineering Team Collaboration"
+              style="width: 100%; border-radius: 12px;"
+            />
+          </div>
+        </div>
+
+        <div class="about-text" data-aos="fade-left" data-aos-duration="1200">
+          <h2>About <span class="highlight">PremiumX Tech</span></h2>
+          <p class="subtitle">
+            Empowering the future through continuous technological evolution.
+          </p>
+          <p>
+            At PremiumX Tech, we are dedicated to building innovative solutions
+            that push the boundaries of modern technology. Our team of
+            passionate engineers, designers, and creators work relentlessly to
+            transform complex challenges into simple, practical tools.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3>5+</h3>
+              <p>Years of Innovation</p>
+            </div>
+            <div class="stat-item">
+              <h3>100+</h3>
+              <p>Projects Launched</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Dedicated Support</p>
+            </div>
+          </div>
+
+          <a href="#products" class="about-cta">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Products Section (12 Tech Cards) -->
+      <section id="products" class="products">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+          <h2>Our Innovative <span class="highlight">Products</span></h2>
+          <p>
+            Discover high-performance consumer gadgets, smart electronics, and
+            deep tech components.
+          </p>
+        </div>
+
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Apex X1 Pro Phone" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Mobile</span>
+              <h3>Apex X1 Pro Phone</h3>
+              <p>Premium edge-to-edge smartphone featuring native machine learning camera pipelines.</p>
+              <div class="card-footer">
+                <h3>₦1,150,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Apex X1 Pro Phone', 1150000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80" alt="Nexus Smart Chrono" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Smart Device</span>
+              <h3>Nexus Smart Chrono</h3>
+              <p>Biometric monitoring wristwatch with localized offline data cryptographic sync.</p>
+              <div class="card-footer">
+                <h3>₦320,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Nexus Smart Chrono', 320000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=400&q=80" alt="Pulse Pods Max" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Smart Device</span>
+              <h3>Pulse Pods Max</h3>
+              <p>Wireless spatial audio earbuds engineered with active neural ambient cancelation.</p>
+              <div class="card-footer">
+                <h3>₦245,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Pulse Pods Max', 245000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=400&q=80" alt="Spectra Vision Glasses" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Smart Device</span>
+              <h3>Spectra Vision Glasses</h3>
+              <p>Lightweight contextual augmented reality glasses built for direct remote assistance.</p>
+              <div class="card-footer">
+                <h3>₦890,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Spectra Vision Glasses', 890000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?auto=format&fit=crop&w=400&q=80" alt="Aegis Smart Hub" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Smart Device</span>
+              <h3>Aegis Home Gateway</h3>
+              <p>Central mesh controller managing local spatial automated appliances entirely localized offline.</p>
+              <div class="card-footer">
+                <h3>₦410,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Aegis Home Gateway', 410000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=400&q=80" alt="Volt Matrix Station" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Hardware</span>
+              <h3>Volt Matrix Station</h3>
+              <p>Smart backup dynamic inverter module engineered with multi-tier solar grid array telemetry trackers.</p>
+              <div class="card-footer">
+                <h3>₦1,750,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Volt Matrix Station', 1750000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=400&q=80" alt="X-1 Quantum Processor" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Hardware</span>
+              <h3>X-1 Quantum Processor</h3>
+              <p>Next-generation processing speeds optimized for desktop AI computations.</p>
+              <div class="card-footer">
+                <h3>₦2,038,640</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('X-1 Quantum Processor', 2038640, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80" alt="Nexus Neural Core" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Hardware</span>
+              <h3>Nexus Neural Core</h3>
+              <p>External compute accelerator enabling real-time edge network processing.</p>
+              <div class="card-footer">
+                <h3>₦1,222,640</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Nexus Neural Core', 1222640, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=400&q=80" alt="Cipher Mechanical Deck" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Hardware</span>
+              <h3>Cipher Mechanical Deck</h3>
+              <p>Hot-swappable custom low-profile keyboard deck fitted with signature dampening layers.</p>
+              <div class="card-footer">
+                <h3>₦185,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Cipher Mechanical Deck', 185000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 10 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=400&q=80" alt="Stratus Cloud Node" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Infrastructure</span>
+              <h3>Stratus Cloud Node</h3>
+              <p>Encrypted decentralized data storage solutions built for absolute privacy.</p>
+              <div class="card-footer">
+                <h3>₦406,640</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Stratus Cloud Node', 406640, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 11 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=400&q=80" alt="Spectra Panel Pro" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Hardware</span>
+              <h3>Spectra Panel Pro</h3>
+              <p>Ultrawide color-calibrated workspace array displaying continuous refresh rendering matrices.</p>
+              <div class="card-footer">
+                <h3>₦780,000</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Spectra Panel Pro', 780000, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 12 -->
+          <article class="card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-img-box">
+              <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=400&q=80" alt="Vector Link Router" />
+            </div>
+            <div class="card-body">
+              <span class="tag">Networking</span>
+              <h3>Vector Link Router</h3>
+              <p>Sub-millisecond data routing equipment with native firewall configurations.</p>
+              <div class="card-footer">
+                <h3>₦257,040</h3>
+                <button class="add-to-cart-btn" onclick="addToCart('Vector Link Router', 257040, event)">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials Section (12 Testimonials) -->
+      <section id="testimonials" class="tst-page">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+          <h2>Client <span class="highlight">Testimonials</span></h2>
+          <p>See what our clients have to say about working with PremiumX Tech.</p>
+        </div>
+
+        <div class="tst-container">
+          <!-- Testimonial 1 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Top-Notch Quality</h3>
+            <figure>
+              <blockquote>
+                <p>"All products are of exceptional quality, built to high standards, and show incredible durability in day-to-day use."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Jenkins" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Sarah Jenkins</strong>
+                  <span class="client-role">Product Manager, Apex Solutions</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 2 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Seamless Delivery</h3>
+            <figure>
+              <blockquote>
+                <p>"Their strategy is smart and efficient. Products are always delivered right on schedule, directly to our office."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=12" alt="David Chen" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">David Chen</strong>
+                  <span class="client-role">Operations Lead, Nexus Ltd.</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 3 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Exceptional Support</h3>
+            <figure>
+              <blockquote>
+                <p>"The technical support team is incredibly responsive. They guided us through setup and resolved our queries in minutes."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=32" alt="Elena Rostova" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Elena Rostova</strong>
+                  <span class="client-role">CTO, CloudScale</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 4 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Sleek User Experience</h3>
+            <figure>
+              <blockquote>
+                <p>"The platform is fast, modern, and remarkably easy to navigate for our entire team's daily operations."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=53" alt="Marcus Vance" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Marcus Vance</strong>
+                  <span class="client-role">Digital Lead, Innovate Labs</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 5 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Absolute Reliability</h3>
+            <figure>
+              <blockquote>
+                <p>"We have relied on PremiumX Tech for over a year now with zero downtime or issues. Highly recommended!"</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=47" alt="Amara Okafor" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Amara Okafor</strong>
+                  <span class="client-role">Director, Vanguard Systems</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 6 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Outstanding Value</h3>
+            <figure>
+              <blockquote>
+                <p>"Unmatched features for the price point. Partnering with them completely transformed how our team collaborates."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=60" alt="Lina O'Connor" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Lina O'Connor</strong>
+                  <span class="client-role">Founder, Venture Studio</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 7 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Game-Changing Hardware</h3>
+            <figure>
+              <blockquote>
+                <p>"Integrating their processing hardware into our local servers multiplied our computing efficiency overnight."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=15" alt="Tariq Al-Mansoor" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Tariq Al-Mansoor</strong>
+                  <span class="client-role">Lead Architect, QuantumCore</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 8 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Impeccable Security</h3>
+            <figure>
+              <blockquote>
+                <p>"Privacy and offline sync features are second to none. Our confidential data remains entirely secure."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=25" alt="Sophie Bernard" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Sophie Bernard</strong>
+                  <span class="client-role">Security Lead, CyberShield</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 9 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Lightning-Fast Network</h3>
+            <figure>
+              <blockquote>
+                <p>"The sub-millisecond data routing equipment has eliminated all bottlenecks across our corporate infrastructure."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=38" alt="Kenji Sato" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Kenji Sato</strong>
+                  <span class="client-role">Network Admin, TokyoNet</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 10 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Brilliant Smart Integration</h3>
+            <figure>
+              <blockquote>
+                <p>"Setting up our smart appliances through their home gateway was intuitive and completely hassle-free."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=44" alt="Hannah Abbott" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Hannah Abbott</strong>
+                  <span class="client-role">Smart Home Enthusiast</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 11 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Exceptional Build Quality</h3>
+            <figure>
+              <blockquote>
+                <p>"From the mechanical keyboard decks to the display panels, every single component feels robust and high-end."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=51" alt="Lucas Martins" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Lucas Martins</strong>
+                  <span class="client-role">Design Director, PixelCraft</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <!-- Testimonial 12 -->
+          <article class="tst-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>A True Tech Partner</h3>
+            <figure>
+              <blockquote>
+                <p>"They don't just sell gadgets; they provide end-to-end technological solutions that scale right alongside our business."</p>
+              </blockquote>
+              <figcaption class="client-info">
+                <img src="https://i.pravatar.cc/100?img=68" alt="Fatima Bello" class="client-avatar" />
+                <div class="client-details">
+                  <strong class="client-name">Fatima Bello</strong>
+                  <span class="client-role">CEO, Zenith Enterprise</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-page">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h2><span>Our Contact</span> Page</h2>
+          <p class="ctc">Trying to get in touch with us? No problem. You can contact us at:</p>
+        </div>
+        <hr />
+        <div class="ctc-container">
+          <div class="ctc-cards" data-aos="fade-up" data-aos-delay="100">
+            <h3>Our Email Address</h3>
+            <p>contact@premiumxtech.com</p>
+          </div>
+
+          <div class="ctc-cards" data-aos="fade-up" data-aos-delay="200">
+            <h3>Our Contact Number</h3>
+            <p>+234 90 34 58 23 40</p>
+          </div>
+
+          <div class="ctc-cards" data-aos="fade-up" data-aos-delay="300">
+            <h3>Our Location</h3>
+            <p class="ctc" style="margin: 0;">
+              We have branches all over Nigeria in states like Edo, Lagos,
+              Enugu, Delta, Port Harcourt, and many more. Our branch in Edo
+              state is at 39 Airport Road, Benin City, Edo State.
+            </p>
+          </div>
+        </div>
+
+        <form class="ctc-form" id="contactForm" data-aos="fade-up" data-aos-duration="1200">
+          <label for="emlAddress">Email Address</label>
+          <input
+            type="email"
+            name="email-address"
+            placeholder="Enter your email address"
+            id="emlAddress"
+            required
+          />
+
+          <label for="subject">Subject / Inquiry</label>
+          <input
+            type="text"
+            name="subject"
+            placeholder="What is this regarding?"
+            id="subject"
+            required
+          />
+
+          <button type="submit" class="submitBtn">Submit Your Details</button>
+        </form>
+
+        <p class="ctc-p">Do well to contact us today and start exploring technology at its peak.</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <hr />
+      <div class="ftr-container">
+        <div class="ftr-card">
+          <h2 class="ftr-h1">Premium <span>X</span> Tech</h2>
+          <p>A place where technology evolves every single day.</p>
+        </div>
+
+        <div class="ftr-card">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="ftr-card">
+          <h3 class="ftr-h2">Contact <span>Us</span></h3>
+          <p>Email address: contact@premiumxtech.com</p>
+          <p>Phone number: +234 90 34 58 23 40</p>
+        </div>
+      </div>
+
+      <hr />
+      <p class="coppyright">&copy; 2026 PremiumX Tech. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset: 100
+      });
+
+      // Form validation script
+      const contactForm = document.getElementById("contactForm");
+      const emlAddress = document.querySelector("#emlAddress");
+      const subject = document.querySelector("#subject");
+
+      contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (!emailRegex.test(emlAddress.value.trim())) {
+          alert("Please enter a valid email address!");
+          emlAddress.focus();
+          return;
+        }
+        if (subject.value.trim() === "") {
+          alert("Please enter a subject or inquiry message!");
+          subject.focus();
+          return;
+        }
+
+        alert("Form submitted successfully!");
+        contactForm.reset();
+      });
+
+      // Cart counter script
+      let cartCount = 0;
+      function addToCart(name, price, event) {
+        cartCount++;
+        document.getElementById("cartCount").innerText = cartCount;
+
+        const btn = event.target;
+        const originalText = btn.innerText;
+        btn.innerText = "Added!";
+        btn.style.backgroundColor = "#00ff88";
+        btn.style.color = "#000";
+        setTimeout(() => {
+          btn.innerText = originalText;
+          btn.style.backgroundColor = "";
+          btn.style.color = "";
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
