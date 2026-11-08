@@ -505,5 +505,36 @@ hr {
   }
   .nav-links {
     display: none;
+    font-size: 15px;
+  }
+  .orderBtn{
+    padding: 5px;
+  }
+  .logo{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px){
+  .logo{
+    font-size: 1rem;
+  }
+  .orderBtn{
+    padding: 5px;
+    font-size: 0.5rem
+  }
+  
+}
+
+@media (max-width: 992px){
+  .logo{
+    font-size: 1rem;
+  }
+  .orderBtn{
+    padding: 4px;
+    font-size: 0.8rem
+  }
+  .nav-links{
+    font-size: 0.8rem;
   }
 }
